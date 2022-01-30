@@ -24,7 +24,8 @@ type Chainable<T = {}> = {
 
 // let a: fun = (g: string) => {
 //   return {
-//     [g]: '1'
-//   }
+//     [g]: '111'
+//   } as any // 实现通过就行，有类型约束来管理得到的提示
 // }
-// let b = a('ss')
+// let b = a('qq')
+
