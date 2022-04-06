@@ -2,9 +2,9 @@
 // 每次迭代 +1
 type Naive<
   N extends string,
-  Base extends any[] = [[]],
+  Base extends any[] = [1],
   M extends any[] = []
-> = `${M['length']}` extends N ? [] : [...Base, ...Naive<N, Base, [[], ...M]>]
+> = `${M['length']}` extends N ? [] : [...Base, ...Naive<N, Base, [1, ...M]>]
 
 // 这里是为了防止递归过深，在做倍乘，Res 是10倍数值，同时也是结果的累计值
 type Rec<S, Res extends any[] = []> = S extends `${infer L}${infer R}`
