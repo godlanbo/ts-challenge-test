@@ -45,7 +45,7 @@ qqq([1, 2, Promise.resolve(3)] as const)
  * function qqq<(number | Promise<number>)[]>(v: (number | Promise<number>)[])
  * : Promise<(number | Promise<number>)[]>
  */
-let a = [1, 2, Promise.resolve(3)]
+// let a = [1, 2, Promise.resolve(3)]
 qqq(a)
 
 // 另一种解法，利用copy全部数组属性，相当于把数组当做一个有 0 1 ... 数字索引签名的对象
