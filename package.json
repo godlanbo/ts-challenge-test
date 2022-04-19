@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@type-challenges/utils": "^0.1.1",
+    "@types/lodash": "^4.14.181",
     "axios": "^0.26.0",
     "request": "^2.88.2"
   }
